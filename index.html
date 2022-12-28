@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/ico" href="favicon.ico" />
+
+        <!-- Google Fonts - Inter -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/style.css" />
+
+        <title>Alura Challenge - Desafio 1</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <nav class="header__nav">
+                <img
+                    class="header__img--nav"
+                    src="img/logotype.png"
+                    alt="logotype"
+                />
+            </nav>
+        </header>
+
+        <!-- main -->
+        <main class="main">
+            <section class="main__section">
+                <textarea
+                    class="main__textarea--section"
+                    id="areaText"
+                    placeholder="Ingrese el texto aquí"
+                ></textarea>
+                <div class="main__div--section info">
+                    <img class="info__img" src="img/info.png" alt="info" />
+                    <p class="info__p">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="main__div--section button">
+                    <button class="button__encrypt" id="encrypt">
+                        Encriptar
+                    </button>
+                    <button class="button__decrypt" id="decrypt">
+                        Desencriptar
+                    </button>
+                </div>
+            </section>
+            <aside class="main__aside">
+                <div class="main__div--aside" id="nofound">
+                    <img
+                        class="main__img--aside"
+                        src="img/skin.png"
+                        alt="skin"
+                    />
+                    <h1 class="main__h1--aside">
+                        Ningún mensaje fue encontrado
+                    </h1>
+                    <p class="main__p--aside">
+                        Ingresa el texto que desees encriptar o desencriptar
+                    </p>
+                </div>
+                <div class="main__div--aside" id="found">
+                    <textarea
+                        class="main__textarea--aside"
+                        id="areaResult"
+                        readonly="readonly"
+                    ></textarea>
+                    <button class="main__button--aside" id="copy">
+                        Copiar
+                    </button>
+                </div>
+            </aside>
+        </main>
+
+        <!-- footer -->
+        <footer class="footer"></footer>
+
+        <script src="src/main.js"></script>
+    </body>
+</html>
